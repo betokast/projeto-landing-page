@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "inter";
+}
+
+:root{
+  --primary-blue: #247ba0;
+  --secondary-blue: #318fb8;
+  --primary-white: #fff;
+  --secondary-white: #EAECE5;
+  --primary-black: #000;
+  --secondary-black: #383838;
+  --primary-gray: #EAECE5;
+  --shadow: #05103081;
+}
+
+/* Menu Superior */
+#menu-superior {
+  background-image: url(./img/bg-superior.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#logo {
+  margin: 52px 0 0 56px;
+}
+
+#titulo-menu-superior {
+  margin: 71px 0 32px 172px;
+  color: var(--primary-white);
+}
+
+#texto-menu-superior {
+  margin-left: 172px;
+  padding-bottom: 151px;
+  color: var(--primary-white);
+}
+
+/* Menu Informacional */
+#menu-informacional {
+  background-color: var(--secondary-white);
+  height: 170px;
+  color: var(--primary-black);
+  /* display: grid;
+  grid-auto-flow: column;
+  columns: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.texto-info {
+  margin: 50px 50px 50px 75px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.menu-informacional-item {
+  display: flex;
+}
+
+#video{
+  margin: 50px 25px 50px 172px;
+}
+
+#secao-video{
+  display: grid;
+  grid-auto-flow: column;
+  columns: auto;
+}
+
+#titulo-video{
+  color: var(--primary-blue);
+  margin-top: 50px;
+}
+
+#texto-video{
+  margin-top: 25px;
+}
+
+/* Seção Depoimentos */
+#carrossel {
+  background-color: var(--primary-blue);
+  padding: 50px;
+}
+
+#titulo-carrossel{
+  color: var(--primary-white);
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+#cards{
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+}
+
+.card{
+  margin-left: 50px;
+}
+
+#seta-esquerda{
+  display: none;
+}
+
+#bruna{
+  display: none;
+}
+
+.setas {
+  cursor: pointer;
+}
+.setas:hover {
+  transform: translateY(-7px);
+  transition-duration: 0.5s;
+}
+
+/* Seção Formulário */
+#formulario{
+  text-align: center;
+}
+
+#titulo-formulario{
+  font-size: 25px;
+  margin: 25px;
+  color: var(--secondary-black);
+}
+
+
+#formulario input {
+  width: 300px;
+  height: 40px;
+  background-color: var(--primary-gray);
+  margin: 15px;
+  padding-left: 10px;
+  border: 0px;
+  border-radius: 5px;
+}
+
+button {
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
+  width: 250px;
+  height: 40px;
+  border: 0px;
+  border-radius: 5px;
+  margin: 40px 0 50px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover{
+  background-color: var(--secondary-blue);
+  transform: translateY(-7px);
+  transition-duration: 0.5s;
+  box-shadow: 0px 5px 10px var(--shadow);
+}
